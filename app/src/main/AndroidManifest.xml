@@ -12,6 +12,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Triangulo4A">
         <activity
+            android:name=".View.MainActivityCuadrado"
+            android:exported="false" />
+        <activity
             android:name=".View.MainActivityRectangulo"
             android:exported="false" />
         <activity
