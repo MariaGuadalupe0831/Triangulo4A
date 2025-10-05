@@ -45,7 +45,10 @@ class MainActivityCirculo : AppCompatActivity(), CirculoContract.CirculoVista {
             presentandor.CalcularPerimetro(radioo)
         }
 
-        btnArea.setOnClickListener { val radio = txtradio.text.toString().toFloat()}
+        btnArea.setOnClickListener {
+            val radio = txtradio.text.toString().toFloat()
+            presentandor.CalcularArea(radio)
+        }
     }
 
     override fun ShowArea(Area: Float) {
@@ -57,7 +60,7 @@ class MainActivityCirculo : AppCompatActivity(), CirculoContract.CirculoVista {
     }
 
     override fun ShowError(msg: String) {
-        TODO("Not yet implemented")
+        txtResultado.text= msg;
     }
 }
 
