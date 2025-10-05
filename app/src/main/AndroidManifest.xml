@@ -12,7 +12,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Triangulo4A">
         <activity
-            android:name=".MainActivity2"
+            android:name=".View.MainActivityRectangulo"
             android:exported="false" />
         <activity
             android:name=".View.MainActivity"

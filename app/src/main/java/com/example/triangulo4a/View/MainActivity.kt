@@ -11,7 +11,6 @@ import androidx.core.view.WindowInsetsCompat
 import com.example.triangulo4a.Contract.TrianguloContract
 import com.example.triangulo4a.Presenter.Cls_TrianguloPresenter
 import com.example.triangulo4a.R
-import kotlin.math.sqrt
 
 class MainActivity : AppCompatActivity(), TrianguloContract.TrianguloVista {
     private lateinit var txvResultado: TextView
