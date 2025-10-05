@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".View.MainActivityCuadrado">
+    tools:context=".View.MainActivityCirculo">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -18,28 +18,29 @@
         <ImageView
             android:layout_width="match_parent"
             android:layout_height="105dp"
-            app:srcCompat="@mipmap/cuadrado" />
+            app:srcCompat="@mipmap/circulo" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="Calculadora Cuadrado 4A"
+            android:text="Calculadora Circulo 4A"
             android:textAlignment="center"
             android:textSize="30dp"
-            android:textStyle="italic"/>
+            android:textStyle="italic"
+            app:layout_constraintTop_toTopOf="parent" />
 
         <EditText
             android:id="@+id/edtRadio"
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginHorizontal="25dp"
-            android:layout_marginTop="30dp"
-            android:hint="Ingresa uno de los lados"
+            android:layout_marginTop="35dp"
+            android:hint="Ingresa el radio"
             android:textAlignment="center"/>
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="80dp"
             android:layout_marginLeft="30dp"
             android:layout_marginTop="45dp"
@@ -66,12 +67,12 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="35dp"
-            android:text="Resultado: "
+            android:text="Resultado"
             android:textAlignment="center"
             android:textSize="20dp"/>
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textView5"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"

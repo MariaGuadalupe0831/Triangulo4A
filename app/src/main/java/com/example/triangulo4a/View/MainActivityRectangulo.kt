@@ -10,7 +10,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.triangulo4a.Contract.RectanguloContract
 import com.example.triangulo4a.Presenter.Cls_RectanguloPresenter
-import com.example.triangulo4a.Presenter.Cls_TrianguloPresenter
 import com.example.triangulo4a.R
 
 class MainActivityRectangulo : AppCompatActivity(), RectanguloContract.RectanguloView {
