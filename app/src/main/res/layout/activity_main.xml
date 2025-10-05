@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MainActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:padding="25dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="-33dp">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="105dp"
+            app:srcCompat="@mipmap/triangulo" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Calculadora de triangulos 4A"
+            android:textAlignment="center"
+            android:textSize="30dp"
+            android:textStyle="italic"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/edtL1"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="25dp"
+            android:hint="Captura el lado 1"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtL2"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="25dp"
+            android:hint="Captura el lado 2"
+            android:textAlignment="center" />
+
+        <EditText
+            android:id="@+id/edtL3"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginHorizontal="25dp"
+            android:layout_marginTop="25dp"
+            android:hint="Captura el lado 3"
+            android:textAlignment="center" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnArea"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:text="Area" />
+
+            <Button
+                android:id="@+id/btnPerimetro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:text="Perimetro" />
+
+            <Button
+                android:id="@+id/btnTipo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="13dp"
+                android:text="Tipo" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/txtRes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="35dp"
+            android:text="Resultado :"
+            android:textAlignment="center"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/txtView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Gracias por su atencion"
+            android:textAlignment="center" />
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
