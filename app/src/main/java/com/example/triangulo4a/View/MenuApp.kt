@@ -11,6 +11,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.triangulo4a.R
 
+
 class MenuApp : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -21,8 +22,7 @@ class MenuApp : AppCompatActivity() {
         val btnIr=findViewById<Button>(R.id.btnIr)
 
         val opciones=arrayOf("Triangulo", "Rectangulo","Cuadrado","Circulo")
-        val adaptador= ArrayAdapter(this,androidx.appcompat.R.layout.support_simple_spinner_dropdown_item, opciones)
-        adaptador.setDropDownViewResource(androidx.appcompat.R.layout.support_simple_spinner_dropdown_item)
+        val adaptador = ArrayAdapter(this, android.R.layout.simple_spinner_item,opciones)
         spinner.adapter=adaptador
 
 

@@ -1,5 +1,6 @@
 package com.example.triangulo4a.View
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -30,6 +31,7 @@ class MainActivityRectangulo : AppCompatActivity(), RectanguloContract.Rectangul
         val txtAltura: EditText=findViewById<EditText>(R.id.edtAltura)
         val btnArea: Button = findViewById<Button>(R.id.btnArea)
         val btnPerimetro: Button = findViewById<Button>(R.id.btnPerimetro)
+        val btnSalir: Button = findViewById<Button>(R.id.btnSalir)
         txtResultado = findViewById<TextView>(R.id.txtRes)
 
         //definimos el presentador
@@ -53,6 +55,10 @@ class MainActivityRectangulo : AppCompatActivity(), RectanguloContract.Rectangul
             val base =txtBase.text.toString().toFloat()
             val altura = txtAltura.text.toString().toFloat()
             presentador.calcularArea(base,altura)
+        }
+        btnSalir.setOnClickListener {
+            val menu = Intent(this, MenuApp::class.java)
+            startActivity(menu)
         }
     }
 

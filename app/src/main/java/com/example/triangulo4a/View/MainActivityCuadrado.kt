@@ -1,5 +1,6 @@
 package com.example.triangulo4a.View
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -29,6 +30,7 @@ class MainActivityCuadrado : AppCompatActivity(), CuadradoContract.CuadradoView 
         val txtlado: EditText = findViewById<EditText>(R.id.edtRadio);
         val btnArea: Button = findViewById<Button>(R.id.btnArea);
         val btnPerimetro: Button = findViewById<Button>(R.id.btnPerimetro);
+        val btnSalir: Button = findViewById<Button>(R.id.btnSalir)
         txtResultado= findViewById<TextView>(R.id.txtRes);
 
         //definimos el presentador
@@ -50,6 +52,10 @@ class MainActivityCuadrado : AppCompatActivity(), CuadradoContract.CuadradoView 
         btnArea.setOnClickListener {
             val lado = txtlado.text.toString().toFloat();
             presentador.CalcularArea(lado);
+        }
+        btnSalir.setOnClickListener {
+            val menu = Intent(this, MenuApp::class.java)
+            startActivity(menu)
         }
     }
 

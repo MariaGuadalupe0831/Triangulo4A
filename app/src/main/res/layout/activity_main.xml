@@ -18,13 +18,13 @@
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="105dp"
+            android:layout_height="100dp"
             app:srcCompat="@mipmap/triangulo" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="40dp"
             android:text="Calculadora de triangulos 4A"
             android:textAlignment="center"
             android:textSize="30dp"
@@ -36,7 +36,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginHorizontal="25dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
             android:hint="Captura el lado 1"
             android:textAlignment="center" />
 
@@ -45,7 +45,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginHorizontal="25dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
             android:hint="Captura el lado 2"
             android:textAlignment="center" />
 
@@ -54,7 +54,7 @@
             android:layout_width="match_parent"
             android:layout_height="48dp"
             android:layout_marginHorizontal="25dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="20dp"
             android:hint="Captura el lado 3"
             android:textAlignment="center" />
 
@@ -89,7 +89,7 @@
             android:id="@+id/txtRes"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="35dp"
+            android:layout_marginTop="25dp"
             android:text="Resultado :"
             android:textAlignment="center"
             android:textSize="20dp" />
@@ -98,10 +98,15 @@
             android:id="@+id/txtView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
+            android:layout_marginTop="30dp"
             android:text="Gracias por su atencion"
             android:textAlignment="center" />
 
-
+        <Button
+            android:id="@+id/btnSalir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="13dp"
+            android:text="Salir" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>

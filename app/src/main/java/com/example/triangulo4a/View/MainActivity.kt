@@ -1,5 +1,6 @@
 package com.example.triangulo4a.View
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.Button
 import android.widget.EditText
@@ -31,6 +32,7 @@ class MainActivity : AppCompatActivity(), TrianguloContract.TrianguloVista {
         val btnArea: Button =findViewById<Button>(R.id.btnArea)
         val btnPerimetro: Button =findViewById<Button>(R.id.btnPerimetro)
         val btnTipo: Button =findViewById<Button>(R.id.btnTipo)
+        val btnSalir: Button=findViewById<Button>(R.id.btnSalir)
         txvResultado = findViewById<TextView>(R.id.txtRes)
 
         //definimos el presentador
@@ -65,6 +67,11 @@ class MainActivity : AppCompatActivity(), TrianguloContract.TrianguloVista {
             val l2=txtl2.text.toString().toFloat()
             val l3=txtl3.text.toString().toFloat()
             presentador.CalculaArea(l1,l2,l3)
+        }
+
+        btnSalir.setOnClickListener {
+            val menu = Intent(this, MenuApp::class.java)
+            startActivity(menu);
         }
     }
 
